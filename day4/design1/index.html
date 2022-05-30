@@ -1,264 +1,302 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-<!--BEM BLOCK - ELEMENT - MODIFIER-->
-<header class="page-header">
-    <div class="page-header__content">
-        <a class="page-header__logo" href="#">
-            <img src="./assets/logo-header.png" alt="logo">
-        </a>
-        <nav class="menu">
-            <ul class="menu__list">
-                <li class="menu__item menu__item--active"><a href="/">Home</a></li>
-                <li class="menu__item"><a href="#section-1">About</a></li>
-                <li class="menu__item"><a href="#section-2">Blog</a></li>
-                <li class="menu__item"><a href="#section-3">Training</a></li>
-                <li class="menu__item"><a href="#section-4">Event</a></li>
-                <li class="menu__item"><a href="#section-5">Shop</a></li>
-                <li class="menu__item"><a href="#section-6">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<main>
-    <section id="section-1" class="section section--hero">
-        <div class="section-container">
-            <figure class="section-container__figure">
-                <img src="./assets/athlete.png" alt="">
-            </figure>
-            <div class="section-container__content">
-                <h1 class="title">Balance Your Body and Mind</h1>
-                <p class="paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat.</p>
-                <button type="submit" class="btn" data-cy="submit">JOIN US NOW</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0,
+            maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!--BEM BLOCK - ELEMENT - MODIFIER-->
+        <header class="page-header">
+            <div class="page-header__container">
+                <a class="page-header__logo" href="#">
+                    <img src="./assets/logo-header.png" alt="logo">
+                </a>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--active"><a href="/">Home</a></li>
+                        <li class="menu__item"><a href="#">About</a></li>
+                        <li class="menu__item"><a href="#">Blog</a></li>
+                        <li class="menu__item"><a href="#">Training</a></li>
+                        <li class="menu__item"><a href="#">Event</a></li>
+                        <li class="menu__item"><a href="#">Shop</a></li>
+                        <li class="menu__item"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </section>
-    <section id="section-2" class="section">
-        <div class="section-container">
-            <div class="section-container__content">
-                <h1 class="title">Pregnant Women Program</h1>
-                <p class="paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-                <button type="submit" class="btn" data-cy="submit">JOIN US NOW</button>
-            </div>
-            <figure class="section-container__figure">
-                <img src="./assets/athlete.png" alt="">
-            </figure>
-        </div>
-    </section>
-    <section id="section-3" class="section">
-        <div class="section-container">
-            <div class="row-items">
-                <div class="card">
-                    <figure class="card__figure">
-                        <img src="./assets/program1.png" alt="">
+        </header>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <figure class="container__figure">
+                        <img src="./assets/athlete.png" alt="">
                     </figure>
-                    <h2 class="card__title">Program 1</h2>
-                    <p class="paragraph">sint occaecat cupidatat non</p>
+                    <div class="container__content">
+                        <h1 class="title">Balance Your Body and Mind</h1>
+                        <p class="paragraph">Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat.</p>
+                        <button type="submit" class="btn" data-cy="submit">JOIN
+                            US NOW</button>
+                    </div>
                 </div>
-                <div class="card">
-                    <figure class="card__figure">
-                        <img src="./assets/program2.png" alt="">
+            </section>
+            <section class="women-program">
+                <div class="container">
+                    <div class="container__content">
+                        <h1 class="title">Pregnant Women Program</h1>
+                        <p class="paragraph">Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat.</p>
+                        <button type="submit" class="btn" data-cy="submit">JOIN
+                            US NOW</button>
+                    </div>
+                    <figure class="container__figure">
+                        <img src="./assets/athlete.png" alt="">
                     </figure>
-                    <h2 class="card__title">Program 1</h2>
-                    <p class="paragraph">sint occaecat cupidatat non</p>
                 </div>
-                <div class="card">
-                    <figure class="card__figure">
-                        <img src="./assets/program3.png" alt="">
+            </section>
+            <section class="programs">
+                <div class="container">
+                    <div class="row-items">
+                        <div class="card">
+                            <figure class="card__figure">
+                                <img src="./assets/program1.png" alt="">
+                            </figure>
+                            <h2 class="card__title">Program 1</h2>
+                            <p class="paragraph">sint occaecat cupidatat non</p>
+                        </div>
+                        <div class="card">
+                            <figure class="card__figure">
+                                <img src="./assets/program2.png" alt="">
+                            </figure>
+                            <h2 class="card__title">Program 1</h2>
+                            <p class="paragraph">sint occaecat cupidatat non</p>
+                        </div>
+                        <div class="card">
+                            <figure class="card__figure">
+                                <img src="./assets/program3.png" alt="">
+                            </figure>
+                            <h2 class="card__title">Program 1</h2>
+                            <p class="paragraph">sint occaecat cupidatat non</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="yoga-breathing">
+                <div class="container">
+                    <div class="container__content">
+                        <h1 class="title">Yoga Breathing or Pranayama</h1>
+                        <p class="paragraph">Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla pariatur. Excepteur sint
+                            occaecat cupidatat.</p>
+                        <button type="submit" class="btn" data-cy="submit">LEARD
+                            MORE</button>
+                    </div>
+                    <figure class="container__figure">
+                        <img src="assets/athlete4.png" alt="">
                     </figure>
-                    <h2 class="card__title">Program 1</h2>
-                    <p class="paragraph">sint occaecat cupidatat non</p>
+                </div>
+            </section>
+            <section class="join-now">
+                <div class="container">
+                    <figure class="container__figure">
+                        <img src="./assets/athlete5.png" alt="">
+                    </figure>
+                    <div class="container__content">
+                        <h1 class="title">Join Now and Get 50% Off</h1>
+                        <p class="paragraph">Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat.</p>
+                        <button type="submit" class="btn" data-cy="submit">JOIN
+                            US NOW</button>
+                    </div>
+                </div>
+            </section>
+            <section class="gallery">
+                <div class="container">
+                    <h1 class="title">Galery</h1>
+                    <p class="paragraph">Neque laoreet suspendisse interdum
+                        consectetur libero id faucibus nisl tincidunt.
+                        Dictum fusce ut placerat orci nulla pellentesque
+                        dignissim enim sit.</p>
+                    <div class="row-items">
+                        <div class="card card--box-shadow">
+                            <figure class="card__figure">
+                                <img src="./assets/gallery1.png" alt="">
+                            </figure>
+                            <h2 class="card__title">Facilis Gravida</h2>
+                            <p class="paragraph">A lacus vestibulum sed. Amet
+                                purus gravida quis blandit turpis.</p>
+                        </div>
+                        <div class="card card--box-shadow">
+                            <figure class="card__figure">
+                                <img src="./assets/gallery2.png" alt="">
+                            </figure>
+                            <h2 class="card__title">Facilis Gravida</h2>
+                            <p class="paragraph">A lacus vestibulum sed. Amet
+                                purus gravida quis blandit turpis.</p>
+                        </div>
+                        <div class="card card--box-shadow">
+                            <figure class="card__figure">
+                                <img src="./assets/gallery3.png" alt="">
+                            </figure>
+                            <h2 class="card__title">Facilis Gravida</h2>
+                            <p class="paragraph">A lacus vestibulum sed. Amet
+                                purus gravida quis blandit turpis.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="training">
+                <div class="container">
+                    <iframe class="container__figure" width="560" height="315"
+                        src="https://www.youtube.com/embed/opTOm29RdyE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write;
+                        encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <div class="container__content">
+                        <h1 class="title">Yoga Training Video Showreel</h1>
+                        <p class="paragraph">Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum
+                            dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat.</p>
+                        <ul class="social">
+                            <li class="social__item">
+                                <a class="social__link social__link--dark" href="">
+                                    <i class="fa-brands fa-facebook-f">
+                                    </i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--dark" href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social__item">
+                                <a class="social__link social__link--dark" href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="container">
+                    <h1 class="title">Get in Touch</h1>
+                    <p class="paragraph">Neque laoreet suspendisse interdum
+                        consectetur libero id faucibus nisl tincidunt.
+                        Dictum fusce ut placerat orci nulla pellentesque
+                        dignissim enim sit.</p>
+                    <form class="form" role="form">
+                        <div class="form__group">
+                            <input type="text" id="fullname"
+                                class="form__control" name="fullname"
+                                placeholder="Your Name"
+                                formControlName="fullname" data-cy="fullname"
+                                autocomplete="name" required/>
+                        </div>
+                        <div class="form__group">
+                            <input type="text" id="gender" class="form__control"
+                                name="gender" placeholder="Gender"
+                                formControlName="email" data-cy="gender"
+                                autocomplete="gender" required/>
+                        </div>
+                        <div class="form__group">
+                            <textarea name="textarea" class="form__control"
+                                rows="10" placeholder="Messages"></textarea>
+                        </div>
+                        <button type="submit" class="btn" data-cy="submit">SEND
+                            MESSAGE</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <div class="footer-container">
+                <div class="footer-container__col">
+                    <h5 class="footer__title-company">Your Companny</h5>
+                    <p class="footer__paragraph">
+                        Halimun Street 25
+                        Jakarta, Indonesia
+                        12850
+                    </p>
+                    <a class="footer__link" href="www.yourdomain.com">www.yourdomain.com</a>
+                </div>
+                <div class="footer-container__col">
+                    <h6 class="footer__title">Sitemap</h6>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="#">Home</a></li>
+                        <li class="footer-list__item"><a href="#">About</a></li>
+                        <li class="footer-list__item"><a href="#">Blog</a></li>
+                        <li class="footer-list__item"><a href="#">Menu</a></li>
+                        <li class="footer-list__item"><a href="#">Store</a></li>
+                        <li class="footer-list__item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container__col">
+                    <h6 class="footer__title">Lorem Ipsum</h6>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="#">Neque</a></li>
+                        <li class="footer-list__item"><a href="#">Suspendisse</a></li>
+                        <li class="footer-list__item"><a href="#">Dicttum</a></li>
+                        <li class="footer-list__item"><a href="#">Porttitor</a></li>
+                        <li class="footer-list__item"><a href="#">Tincidunt</a></li>
+                        <li class="footer-list__item"><a href="#">Enim lobortis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container__col">
+                    <h6 class="footer__title">Lorem Ipsum</h6>
+                    <ul class="footer-list">
+                        <li class="footer-list__item"><a href="#">Neque</a></li>
+                        <li class="footer-list__item"><a href="#">Suspendisse</a></li>
+                        <li class="footer-list__item"><a href="#">Dicttum</a></li>
+                        <li class="footer-list__item"><a href="#">Porttitor</a></li>
+                        <li class="footer-list__item"><a href="#">Tincidunt</a></li>
+                        <li class="footer-list__item"><a href="#">Enim lobortis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-container__col">
+                    <figure class="footer__logo">
+                        <img src="./assets/logo-footer.png" alt="">
+                    </figure>
+                    <p class="footer__paragraph">
+                        Copyright © 2020 Freepik
+                        Company S.L. All rights reserved.
+                    </p>
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link"href="">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link" href="">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-
-    </section>
-    <section id="section-4" class="section">
-        <div class="section-container">
-            <div class="section-container__content">
-                <h1 class="title">Yoga Breathing or Pranayama</h1>
-                <p class="paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
-                <button type="submit" class="btn" data-cy="submit">LEARD MORE</button>
-            </div>
-            <figure class="section-container__figure">
-                <img src="assets/athlete4.png" alt="">
-            </figure>
-        </div>
-    </section>
-    <section id="section-5" class="section">
-        <div class="section-container">
-            <figure class="section-container__figure">
-                <img src="./assets/athlete5.png" alt="">
-            </figure>
-            <div class="section-container__content">
-                <h1 class="title">Join Now and Get 50% Off</h1>
-                <p class="paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat.</p>
-                <button type="submit" class="btn" data-cy="submit">JOIN US NOW</button>
-            </div>
-        </div>
-    </section>
-    <section id="section-6" class="section">
-        <div class="section-container">
-            <h1 class="title">Galery</h1>
-            <p class="paragraph">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt.
-                Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
-            <div class="row-items">
-                <div class="card card--box-shadow">
-                    <figure class="card__figure">
-                        <img src="./assets/gallery1.png" alt="">
-                    </figure>
-                    <h2 class="card__title">Facilis Gravida</h2>
-                    <p class="paragraph">A lacus vestibulum sed. Amet purus gravida quis blandit turpis.</p>
-                </div>
-                <div class="card card--box-shadow">
-                    <figure class="card__figure">
-                        <img src="./assets/gallery2.png" alt="">
-                    </figure>
-                    <h2 class="card__title">Facilis Gravida</h2>
-                    <p class="paragraph">A lacus vestibulum sed. Amet purus gravida quis blandit turpis.</p>
-                </div>
-                <div class="card card--box-shadow">
-                    <figure class="card__figure">
-                        <img src="./assets/gallery3.png" alt="">
-                    </figure>
-                    <h2 class="card__title">Facilis Gravida</h2>
-                    <p class="paragraph">A lacus vestibulum sed. Amet purus gravida quis blandit turpis.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="section-7" class="section">
-        <div class="section-container">
-            <iframe class="section-container__figure" width="560" height="315"
-                    src="https://www.youtube.com/embed/opTOm29RdyE"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            <div class="section-container__content">
-                <h1 class="title">Yoga Training Video Showreel</h1>
-                <p class="paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                    dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat.</p>
-                <ul class="social">
-                    <li class="social__item"><a class="social__link" href=""> <i class="facebook"></i></a></li>
-                    <li class="social__item"><a class="social__link" href=""><i class="instagram"></i></a></li>
-                    <li class="social__item"><a class="social__link" href=""><i class="twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section id="section-8" class="section">
-        <div class="section-container">
-            <h1 class="title">Get in Touch</h1>
-            <p class="paragraph">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt.
-                Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit.</p>
-            <form class="section-content__form form" role="form">
-                <div class="form-group">
-                    <input
-                            type="text"
-                            id="fullname"
-                            class="form-control"
-                            name="fullname"
-                            placeholder="Your Name"
-                            formControlName="fullname"
-                            data-cy="fullname"
-                            autocomplete="name"
-                            required
-                    />
-                </div>
-                <div class="form-group">
-                    <input
-                            type="text"
-                            id="gender"
-                            class="form-control"
-                            name="gender"
-                            placeholder="Gender"
-                            formControlName="email"
-                            data-cy="gender"
-                            autocomplete="gender"
-                            required
-                    />
-                </div>
-                <div class="form-group">
-                    <textarea name="textarea" class="form-control" rows="10" placeholder="Messages"></textarea>
-                </div>
-                <button type="submit" class="btn" data-cy="submit">SEND MESSAGE</button>
-            </form>
-        </div>
-    </section>
-</main>
-<footer class="footer">
-    <div class="footer-container">
-        <div class="footer-container__col">
-            <h5 class="footer__title-company">Your Companny</h5>
-            <p class="footer__paragraph">
-                Halimun Street 25
-                Jakarta, Indonesia
-                12850
-            </p>
-            <a class="footer__link" href="www.yourdomain.com">www.yourdomain.com</a>
-        </div>
-        <div class="footer-container__col">
-            <h6 class="footer__title">Sitemap</h6>
-            <ul class="footer-list">
-                <li class="footer-list__item"><a href="#">Home</a></li>
-                <li class="footer-list__item"><a href="#">About</a></li>
-                <li class="footer-list__item"><a href="#">Blog</a></li>
-                <li class="footer-list__item"><a href="#">Menu</a></li>
-                <li class="footer-list__item"><a href="#">Store</a></li>
-                <li class="footer-list__item"><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-container__col">
-            <h6 class="footer__title">Lorem Ipsum</h6>
-            <ul class="footer-list">
-                <li class="footer-list__item"><a href="#">Neque</a></li>
-                <li class="footer-list__item"><a href="#">Suspendisse</a></li>
-                <li class="footer-list__item"><a href="#">Dicttum</a></li>
-                <li class="footer-list__item"><a href="#">Porttitor</a></li>
-                <li class="footer-list__item"><a href="#">Tincidunt</a></li>
-                <li class="footer-list__item"><a href="#">Enim lobortis</a></li>
-            </ul>
-        </div>
-        <div class="footer-container__col">
-            <h6 class="footer__title">Lorem Ipsum</h6>
-            <ul class="footer-list">
-                <li class="footer-list__item"><a href="#">Neque</a></li>
-                <li class="footer-list__item"><a href="#">Suspendisse</a></li>
-                <li class="footer-list__item"><a href="#">Dicttum</a></li>
-                <li class="footer-list__item"><a href="#">Porttitor</a></li>
-                <li class="footer-list__item"><a href="#">Tincidunt</a></li>
-                <li class="footer-list__item"><a href="#">Enim lobortis</a></li>
-            </ul>
-        </div>
-        <div class="footer-container__col">
-            <figure class="footer__logo">
-                <img src="./assets/logo-footer.png" alt="">
-            </figure>
-            <p class="footer__paragraph">
-                Copyright © 2020 Freepik
-                Company S.L. All rights reserved.
-            </p>
-            <ul class="social">
-                <li class="social__item"><a class="social__link" href=""> <i class="facebook"></i></a></li>
-                <li class="social__item"><a class="social__link" href=""><i class="instagram"></i></a></li>
-                <li class="social__item"><a class="social__link" href=""><i class="twitter"></i></a></li>
-            </ul>
-        </div>
-    </div>
-</footer>
-</body>
+        </footer>
+    </body>
 </html>
