@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="this Page is for training in SmartinCode">
+    <meta name="keywords" content="program, design">
+    <meta name="author" content="Edwin Bustamante Rodriguez">
+    <meta name="copyright" content="Copyright @ edwin.com">
+    <meta name="robot" content="index, follow"> <!--(crawlers)-->
+    <!-- <meta name="robot" content="noindex">-->
+    <!-- <meta http-equiv="refresh" content="10;url=http://google.com">-->
+    <title>Metadata</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+
+
+<video controls autoplay muted loop>
+    <source src="./assets/mov_bbb.mp4" type="video/mp4">
+    <!--   <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">-->
+    Your browser does not support the video tag.
+</video>
+
+<video controls poster="./assets/poster.jpeg" width="300">
+    <source src="./assets/mov_bbb.mp4" type="video/mp4">
+    <!--   <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">-->
+    Your browser does not support the video tag.
+</video>
+
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="https://mus.mimusicacristiana.net/top40/Ryan Castro - Jordan.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<!--_self- Defecto. Abre el documento en la misma ventana/pestaña en la que se hizo clic
+_blank- Abre el documento en una nueva ventana o pestaña
+_parent- Abre el documento en el marco principal
+_top- Abre el documento en el cuerpo completo de la ventana.-->
+
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+
+<h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p>
+
+<a href="mailto:someone@example.com">Send email</a>
+
+<!--Resumen del capítulo
+Usar el <a>elemento para definir un enlace
+    Use el hrefatributo para definir la dirección del enlace
+    Use el targetatributo para definir dónde abrir el documento vinculado
+    Use el <img>elemento (dentro <a>) para usar una imagen como enlace
+        Use el mailto:esquema dentro del hrefatributo para crear un enlace que abra el programa de correo electrónico
+        del usuario-->
+
+<a href="https://www.google.com/" target="_blank">
+    <img src="./assets/poster.jpeg" alt="HTML tutorial" style="width:42px;height:42px;">
+</a>
+
+<iframe src="https://tools.pingdom.com/" height="500" width="300" title="Iframe Example Custom"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M2kSJbLbIgQ"  allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/opTOm29RdyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d471.461440032683!2d-65.25379757824247!3d-19.03331014934233!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc920a54fdf01%3A0x81f7b8ecbda82233!2zTknDkU9TIEVOIEFDQ0nDkk4!5e0!3m2!1ses!2sbo!4v1653596587106!5m2!1ses!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1653596664907!6m8!1m7!1sjqIuk-JjoVwMiQs0VwrC6w!2m2!1d-19.0337254974505!2d-65.25376258287417!3f86.97167627371672!4f-7.946008161238382!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!--Chapter Summary
+The HTML <iframe> tag specifies an inline frame
+    The src attribute defines the URL of the page to embed
+    Always include a title attribute (for screen readers)
+    The height and width attributes specifies the size of the iframe
+    Use border:none; to remove the border around the iframe-->
+</body>
+</html>
+

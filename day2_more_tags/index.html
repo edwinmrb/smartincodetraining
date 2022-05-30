@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day two</title>
+</head>
+
+<body>
+<header class="navbar navbar--fixed">
+    <a class="navbar--brand brand" href="">
+        <img class="brand--logo" src="https://via.placeholder.com/80x50.png" alt="">
+        <span class="brand--title">trend</span>
+    </a>
+    <nav class="navbar--nav">
+        <ul class="nav">
+            <li class="nav__item-primary">
+                <a class="nav--link" href="/">Services</a>
+            </li>
+            <li class="nav--item">
+                <a class="nav--link" href="/">About</a>
+            </li>
+            <li class="nav--item">
+                <a class="nav--link" href="/">Contacts</a>
+            </li>
+            <li class="nav--item nav--item-border">
+                <a class="nav--link" href="/">Login in</a>
+            </li>
+            <li class="nav--item nav--item-border">
+                <a class="nav--link" href="/">Open an account</a>
+            </li>
+            <li class="nav--item nav--item-border">
+                <a class="nav--link" href="/">EN</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<main class="container">
+    <section>
+        <form class="form" id="signup" action="http://localhost:80" method="post" enctype="text/plain" autocomplete="on">
+            <div class="card">
+                <header class="card--header">
+                    <a class="brand" href="">
+                        <img class="brand--logo" src="https://via.placeholder.com/80x50.png" alt="">
+                        <span class="brand--title">trend</span>
+                    </a>
+                    <h1 class="card--title">Welcome to ByTrend!</h1>
+                    <p class="card--description">Already have an account? <a href="/login"><span>Log in</span></a></p>
+                </header>
+                <div class="card--body">
+                    <div class="form--group">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" type="text" placeholder="First Name" name="firstName">
+                    </div>
+                    <div class="form--group">
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" type="text" placeholder="Last Name" name="lastName">
+                    </div>
+                    <div class="form--group">
+                        <label for="birthDate">Birth Date</label>
+                        <input id="birthDate" type="date" placeholder="Birth Date" name="birthDate">
+                    </div>
+
+                    <div class="form--group">
+                        <label for="gender">Gender</label>
+                        <div class="form--group " id="gender">
+                            <input id="female" type="radio" name="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="form--group">
+                            <input id="male" type="radio" name="male">
+                            <label for="male">Male</label>
+                        </div>
+                    </div>
+                    <div class="form--group ">
+                        <label for="skype">Skype</label>
+                        <input id="skype" type="text" placeholder="Your Login Skype" name="skype">
+                    </div>
+                    <div class="form--group">
+                        <label for="promo">Promo</label>
+                        <input id="promo" type="text" placeholder="Promo" name="promo">
+                    </div>
+
+                     <button type="submit" class="btn btn-primary" >Continue</button>
+                  <!--  <input type="submit" class="btn btn-primary" value="Continue"/>-->
+
+                </div>
+            </div>
+        </form>
+    </section>
+    <section>
+        <H1>TABLES</H1>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+            <tr>
+                <td colspan="2">Edwin Bustamante</td>
+                <!--  <td>Bustamante</td>-->
+                <td>edwinfcyt@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>juan@gmail.com</td>
+            </tr>
+            <tr>
+                <td>David</td>
+                <td>Lopez</td>
+                <td>david@gmail.com</td>
+            </tr>
+        </table>
+
+        <hr>
+        <p onclick="this.style.color='red'">s simply dummy text of the printing and typesetting industry. Lorem Ipsum
+            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+            leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+            software like Aldus PageMaker including versions of Lorem Ipsum</p>
+
+        <h2>HEADINGS</h2>
+        <h1>h1</h1>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5>
+        <h6>h6</h6>
+
+
+        <h2>UNORDER LIST</h2>
+        <ul>
+            <li>TOMATES</li>
+            <li>HUEVOS</li>
+            <li>MANZANAS</li>
+        </ul>
+
+        <h2>ORDER LIST</h2>
+        <ol start="22">
+            <li>TOMATES</li>
+            <li>HUEVOS</li>
+            <li>MANZANAS</li>
+        </ol>
+
+
+        <h1>Glosario de términos de oficina</h1>
+        <dl>
+            <dt>Imprimir</dt>
+            <dd>Imprimir en impresora láser, en blanco y negro.</dd>
+            <dt>Enumerar</dt>
+            <dd>Enumerar todas las hojas del documento</dd>
+            <dt>Ordenar</dt>
+            <dd>Ordenar las hojas impresas de acuerdo a la numeración
+                en cada una de ellas.
+            </dd>
+        </dl>
+
+        <p>Atractivos turísticos de México:</p>
+
+        <dl>
+            <dt>Jardines de México, Morelos</dt>
+            <dd>Son los jardines florales más grandes del mundo.</dd>
+
+            <dt>Chichén Itzá, Yucatán</dt>
+            <dd>Es la nueva maravilla moderna.</dd>
+
+            <dt>Cenote El Zacatón, Tamaulipas</dt>
+            <dd>Es el pozo natural más profundo del planeta.</dd>
+        </dl>
+
+    </section>
+</main>
+</body>
+</html>
