@@ -1,0 +1,28 @@
+/* The CSS Universal Selector */
+* {
+  text-align: center;
+  color: blue;
+}
+
+#paragraph-custom {
+    color: #555435;
+}
+
+.paragraph-primary {
+    color: #1197da;;
+}
+
+p.paragraph-primary{
+    color: chartreuse;
+}
+
+body {
+  background-color: rgb(11, 141, 148);
+}
+
+h1,  p {
+    text-align: center;
+    color: red;
+  }
+
+ 
