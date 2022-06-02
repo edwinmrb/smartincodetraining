@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* header definition */
+.page-header {
+  height: 8rem;
+  width: 100%;
+}
+
+.page-header__logo img {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+
+/* settings menu */
+.menu .menu__list {
+  list-style: none;
+ 
+}
+
+.menu .menu__list .menu__item {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #18939cd5;
+}
+
+.menu .menu__list .menu__item a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+}
+
+/* hero settings */
+.hero {
+  width: 100%;
+  height: calc(100vh - 8rem);
+  background-image: url(./assets//background/background1.png);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
