@@ -102,7 +102,7 @@ html {
   flex-basis: 50%;
 }
 
-/*RESPONSE DESIG*/
+/*RESPONSE DESIGN*/
 @media (max-width: 852px) {
   .container {
     margin-left: 0;
