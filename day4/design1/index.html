@@ -12,32 +12,37 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
             integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous"
             referrerpolicy="no-referrer" />
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!--  <script src=" ./jquery-3.6.0.min.js"></script> -->
     </head>
     <body>
         <!--BEM BLOCK - ELEMENT - MODIFIER-->
         <header class="page-header">
-            <div class="container box-flex">
+            <div class="container page-header__toolbar">
                 <a class="page-header__logo" href="#">
-                    <img src="./assets/logo-header.png" alt="logo">
+                    <img class="page-header__img" src="./assets/logo-header.png"
+                        alt="logo">
                 </a>
-                <nav class="menu">
+                <nav>
                     <ul class="menu__list">
                         <li class="item__active"><a href="/">Home</a></li>
-                        <li ><a href="#">About</a></li>
-                        <li ><a href="#">Blog</a></li>
-                        <li ><a href="#">Training</a></li>
-                        <li ><a href="#">Event</a></li>
-                        <li ><a href="#">Shop</a></li>
-                        <li ><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Training</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
         <main>
             <section class="hero">
-                <div class="container box-flex">
+                <div class="container container-flex">
                     <figure class="container__figure">
-                        <img class="img-responsive" src="./assets/athlete.png" alt="">
+                        <img class="img-responsive" src="./assets/athlete.png"
+                            alt="">
                     </figure>
                     <div class="container__content">
                         <h1 class="title">Balance Your Body and Mind</h1>
@@ -45,94 +50,100 @@
                             reprehenderit in voluptate velit esse cillum
                             dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat.</p>
-                        <button type="submit" class="btn" data-cy="submit">JOIN
-                            US NOW</button>
+                        <a class="btn" href="http://" target="_blank"
+                            rel="noopener noreferrer">JOIN
+                            US NOW</a>
                     </div>
                 </div>
             </section>
-           <section class="women-program">
-                <div class="container box-flex">
+            <section class="women-program">
+                <div class="container container-flex">
                     <div class="container__content">
                         <h1 class="title">Pregnant Women Program</h1>
                         <p class="paragraph">Duis aute irure dolor in
                             reprehenderit in voluptate velit esse cillum
                             dolore eu fugiat nulla pariatur. Excepteur sint
                             occaecat cupidatat.</p>
-                        <button type="submit" class="btn" data-cy="submit">JOIN
-                            US NOW</button>
+                        <a class="btn" href="http://" target="_blank"
+                            rel="noopener noreferrer">JOIN
+                            US NOW</a>
+
                     </div>
                     <!-- <figure class="container__figure">
                         <img src="./assets/athlete.png" alt="">
                     </figure> -->
                 </div>
             </section>
-           <!--  <section class="programs">
-                <div class="container">
-                    <div class="row-items">
-                        <div class="card">
-                            <figure class="card__figure">
-                                <img src="./assets/program1.png" alt="">
-                            </figure>
-                            <h2 class="card__title">Program 1</h2>
-                            <p class="paragraph">sint occaecat cupidatat non</p>
-                        </div>
-                        <div class="card">
-                            <figure class="card__figure">
-                                <img src="./assets/program2.png" alt="">
-                            </figure>
-                            <h2 class="card__title">Program 1</h2>
-                            <p class="paragraph">sint occaecat cupidatat non</p>
-                        </div>
-                        <div class="card">
-                            <figure class="card__figure">
-                                <img src="./assets/program3.png" alt="">
-                            </figure>
-                            <h2 class="card__title">Program 1</h2>
-                            <p class="paragraph">sint occaecat cupidatat non</p>
-                        </div>
+            <section class="programs">
+                <div class="container container-flex container-cards">
+                    <div class="card">
+                        <figure class="card__figure">
+                            <img class="img-responsive" alt=""
+                                src="./assets/program1.png" alt="">
+                        </figure>
+                        <h2 class="card__title">Program 1</h2>
+                        <p class="paragraph">sint occaecat cupidatat non</p>
+                    </div>
+                    <div class="card">
+                        <figure class="card__figure">
+                            <img src="./assets/program2.png" alt="">
+                        </figure>
+                        <h2 class="card__title">Program 1</h2>
+                        <p class="paragraph">sint occaecat cupidatat non</p>
+                    </div>
+                    <div class="card">
+                        <figure class="card__figure">
+                            <img src="./assets/program3.png" alt="">
+                        </figure>
+                        <h2 class="card__title">Program 1</h2>
+                        <p class="paragraph">sint occaecat cupidatat non</p>
                     </div>
                 </div>
-            </section> -->
-          <!--   <section class="yoga-breathing">
-                <div class="container">
+            </section>
+            <section class="yoga-breathing">
+                <div class="container container-flex">
                     <div class="container__content">
                         <h1 class="title">Yoga Breathing or Pranayama</h1>
                         <p class="paragraph">Duis aute irure dolor in
                             reprehenderit in voluptate velit esse cillum
                             dolore eu fugiat nulla pariatur. Excepteur sint
                             occaecat cupidatat.</p>
-                        <button type="submit" class="btn" data-cy="submit">LEARD
-                            MORE</button>
+                        <a class="btn">LEARD
+                            MORE</a>
                     </div>
                     <figure class="container__figure">
-                        <img src="assets/athlete4.png" alt="">
+                        <img class="img-responsive" src="./assets/athlete4.png"
+                            alt="">
                     </figure>
                 </div>
             </section>
             <section class="join-now">
-                <div class="container">
+                <div class="container container-flex">
                     <figure class="container__figure">
-                        <img src="./assets/athlete5.png" alt="">
+                        <img class="container__figure--position-bottom"
+                            src="./assets/athlete5.png" alt="">
                     </figure>
-                    <div class="container__content">
+                    <div class="container__content container__content-join-now">
                         <h1 class="title">Join Now and Get 50% Off</h1>
                         <p class="paragraph">Duis aute irure dolor in
                             reprehenderit in voluptate velit esse cillum
                             dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat.</p>
-                        <button type="submit" class="btn" data-cy="submit">JOIN
-                            US NOW</button>
+                        <a class="btn" href="http://" target="_blank"
+                            rel="noopener noreferrer">JOIN NOW</a>
                     </div>
                 </div>
             </section>
             <section class="gallery">
                 <div class="container">
-                    <h1 class="title">Galery</h1>
-                    <p class="paragraph">Neque laoreet suspendisse interdum
-                        consectetur libero id faucibus nisl tincidunt.
-                        Dictum fusce ut placerat orci nulla pellentesque
-                        dignissim enim sit.</p>
-                    <div class="row-items">
+                    <div class="gallery-content">
+                        <h1 class="title">Galery</h1>
+                        <p class="paragraph">Neque laoreet suspendisse interdum
+                            consectetur libero id faucibus nisl tincidunt.
+                            Dictum fusce ut placerat orci nulla pellentesque
+                            dignissim enim sit.</p>
+                    </div>
+                    <div class="container-flex padding-left--right">
                         <div class="card card--box-shadow">
                             <figure class="card__figure">
                                 <img src="./assets/gallery1.png" alt="">
@@ -161,8 +172,9 @@
                 </div>
             </section>
             <section class="training">
-                <div class="container">
-                    <iframe class="container__figure" width="560" height="315"
+                <div class="container container-flex">
+                    <iframe class="container__figure card--box-shadow"
+                        width="560" height="315"
                         src="https://www.youtube.com/embed/opTOm29RdyE"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write;
@@ -175,19 +187,20 @@
                             dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat.</p>
                         <ul class="social">
-                            <li class="social__item">
-                                <a class="social__link social__link--dark" href="">
+                            <li class="social__item social__item--dark">
+                                <a class="social__link" href="">
                                     <i class="fa-brands fa-facebook-f">
                                     </i>
                                 </a>
                             </li>
-                            <li class="social__item">
-                                <a class="social__link social__link--dark" href="">
+                            <li class="social__item social__item--dark">
+                                <a class="social__link" href="">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </li>
-                            <li class="social__item">
-                                <a class="social__link social__link--dark" href="">
+                            <li class="social__item social__item--dark">
+                                <a class="social__link"
+                                    href="">
                                     <i class="fa-brands fa-twitter"></i>
                                 </a>
                             </li>
@@ -197,36 +210,34 @@
             </section>
             <section class="contact">
                 <div class="container">
-                    <h1 class="title">Get in Touch</h1>
-                    <p class="paragraph">Neque laoreet suspendisse interdum
-                        consectetur libero id faucibus nisl tincidunt.
-                        Dictum fusce ut placerat orci nulla pellentesque
-                        dignissim enim sit.</p>
-                    <form class="form" role="form">
-                        <div class="form__group">
+                    <div class="gallery-content">
+                        <h1 class="title">Get in Touch</h1>
+                        <p class="paragraph">Neque laoreet suspendisse interdum
+                            consectetur libero id faucibus nisl tincidunt.
+                            Dictum fusce ut placerat orci nulla pellentesque
+                            dignissim enim sit.</p>
+                        <form class="form" role="form">
                             <input type="text" id="fullname"
                                 class="form__control" name="fullname"
                                 placeholder="Your Name"
-                                formControlName="fullname" data-cy="fullname"
+                                formControlName="fullname"
+                                data-cy="fullname"
                                 autocomplete="name" required/>
-                        </div>
-                        <div class="form__group">
-                            <input type="text" id="gender" class="form__control"
+                            <input type="text" id="gender"
+                                class="form__control"
                                 name="gender" placeholder="Gender"
                                 formControlName="email" data-cy="gender"
                                 autocomplete="gender" required/>
-                        </div>
-                        <div class="form__group">
                             <textarea name="textarea" class="form__control"
-                                rows="10" placeholder="Messages"></textarea>
-                        </div>
-                        <button type="submit" class="btn" data-cy="submit">SEND
-                            MESSAGE</button>
-                    </form>
+                                rows="7" placeholder="Messages"></textarea>
+
+                            <a class="btn btn-wrap" href="http://">SEND MESSAGE</a>
+                        </form>
+                    </div>
                 </div>
-            </section>  -->
-        </main> 
-      <!--   <footer class="page-footer">
+            </section>
+        </main>
+        <footer class="page-footer">
             <div class="container">
                 <div class="footer-container__col">
                     <h5 class="footer__title-company">Your Companny</h5>
@@ -285,7 +296,7 @@
                             </a>
                         </li>
                         <li class="social__item">
-                            <a class="social__link"href="">
+                            <a class="social__link" href="">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
                         </li>
@@ -297,6 +308,6 @@
                     </ul>
                 </div>
             </div>
-        </footer> -->
+        </footer>
     </body>
 </html>
