@@ -1,0 +1,124 @@
+/* - Mobile: 375px
+- Desktop: 1440px
+- Weights: 500, 700, 900
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: rgb(56, 41, 224);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --font-size-paragraph: 16px;
+  --font: "Red Hat Display", sans-serif;
+  --wave-top-desktop: url(./images/pattern-background-desktop.svg);
+  --wave-top-mobile: url(./images/pattern-background-mobile.svg);
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--pale-blue);
+  background-image: var(--wave-top-mobile);
+  background-repeat: no-repeat;
+  background-size: 100% 80%;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 90%;
+}
+
+.card {
+  width: 100%;
+  background-color: var(--very-pale-blue);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.card__img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+}
+.card__body {
+  padding: 24px;
+  text-align: center;
+}
+
+.card__title {
+  font-weight: 900;
+  color: var(--dark-blue);
+  letter-spacing: 1.2px;
+  margin: 16px 0;
+}
+
+.card__paragraph {
+  font-weight: 500;
+  font-size: var(--font-size-paragraph);
+  color: var(--desaturated-blue);
+  line-height: 25px;
+  margin: 16px 0;
+  letter-spacing: 0.2px;
+}
+.cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 16px;
+}
+
+.cost__plan {
+  text-align: left;
+}
+.cost__plan h3 {
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+.cost__plan p {
+  margin: 0px;
+}
+
+.cost a {
+  color: var(--bright-blue);
+  font-weight: 500;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--desaturated-blue);
+  padding: 16px 24px;
+}
+
+.btn-primary {
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 14px 1px var(--desaturated-blue);
+  box-shadow: 0px 2px 14px 1px var(--desaturated-blue);
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: var(--wave-top-desktop);
+    background-size: 100% 50%;
+  }
+
+  .container {
+    max-width: 30%;
+    min-width: 360px;
+  }
+}

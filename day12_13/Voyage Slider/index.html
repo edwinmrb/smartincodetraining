@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap basic table example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+   <!--  <link rel="stylesheet" href="css/dreyanim/dreyanim.css">
+ -->
+</head>
+<body>
+<div class="container ">
+<h1>A Bootstrap table</h1>
+<table class="table table-bordered table-striped table-hover animation-demo">
+  <tr class="danger">
+      <th>Product ID</th>
+      <th>Product Name</th>
+      <th>Product Quality</th>
+      <th>Product Quantity</th>
+  </tr>
+  <tr class="info">
+      <td>1</td>
+      <td>Wheat</td>
+      <td>Good</td>
+      <td>200 Bags</td>
+  </tr>
+  <tr class="warning">
+      <td>2</td>
+      <td>Rice</td>
+      <td>Good</td>
+      <td>250 Bags</td>
+  <tr class="info">
+      <td>3</td>
+      <td>Sugar</td>
+      <td>Good</td>
+      <td>200 Bags</td>
+  </tr>  
+  <tr class="warning">
+      <td>3</td>
+      <td>Sugar</td>
+      <td>Good</td>
+      <td>200 Bags</td>
+  </tr> 
+  <tr class="info">
+      <td>3</td>
+      <td>Sugar</td>
+      <td>Good</td>
+      <td>200 Bags</td>
+  </tr>     
+</table>
+</div><br /><br />
+<div class="col-sm-4">
+    <select name="Selanimation" class="form-control" id="animationOption" style="display: block; margin: auto">
+      <option value="zoomIn">zoomIn</option>
+      <option value="zoomOut">zoomOut</option>
+      <option value="fadeIn">fadeIn</option>
+      <option value="fadeOut">fadeOut</option>
+      <option value="slideInFromUp">slideInFromUp</option>
+      <option value="slideOutToUp">slideOutToUp</option>
+      <option value="slideInFromDown">slideInFromDown</option>
+      <option value="slideOutToDown">slideOutToDown</option>
+      <option value="slideInFromLeft">slideInFromLeft</option>
+      <option value="slideOutToLeft">slideOutToLeft</option>
+      <option value="slideInFromRight">slideInFromRight</option>
+      <option value="slideOutToRight">slideOutToRight</option>
+      <option value="flipIn">flipIn</option>
+      <option value="flipOut">flipOut</option>
+      <option value="flipInAlternate">flipInAlternate</option>
+      <option value="flipOutAlternate">flipOutAlternate</option>
+      <option value="fallIn">fallIn</option>
+      <option value="fallOut">fallOut</option>
+      <option value="fallInAlternate">fallInAlternate</option>
+      <option value="fallOutAlternate">fallOutAlternate</option>
+      <option value="rotateIn">rotateIn</option>
+      <option value="rotateOut">rotateOut</option>
+      <option value="wipeInHorizontal">wipeInHorizontal</option>
+      <option value="wipeOutHorizontal">wipeOutHorizontal</option>
+      <option value="wipeInVertical">wipeInVertical</option>
+      <option value="wipeOutVertical">wipeOutVertical</option>
+    </select>
+ </div>
+<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script src="js/dreyanim/dreyanim.js"></script>
+<script>
+    $('#animationOption').on("change",function(){
+    $animationType = $("#animationOption").val();
+    $('.animation-demo').dreyanim({
+      animationType : $animationType,
+      animationTime : 2000
+    })
+  })
+</script>
+
+</body>
+</html>
+
+
