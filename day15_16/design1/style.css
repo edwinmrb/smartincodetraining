@@ -11,9 +11,11 @@
   --font-playfair-display: "Playfair Display", serif;
   --font-roboto: "Roboto", sans-serif;
   --font-size-paragraph: 14px;
+  --font-size-card-title: 14px;
 
   --primary-color: #00e0d0;
   --white-color: #fff;
+  --secondary-color: #413d4b;
   --overlay-linear-gradient: linear-gradient(
     to right,
     rgba(9, 5, 47, 0.8),
@@ -34,7 +36,6 @@
 body {
   font-family: var(--font-roboto);
   font-size: var(--font-size-paragraph);
-  color: var(--white-color);
   font-weight: 300;
 }
 
@@ -52,6 +53,37 @@ body {
   border: 1px solid var(--primary-color);
   border-radius: 2px;
   letter-spacing: auto;
+  display: inline-block;
+}
+.img-responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+.title {
+  font-family: var(--font-playfair-display);
+  color: var(--secondary-color);
+}
+
+.paragraph {
+  color: var(--secondary-color);
+}
+
+.content-center {
+  text-align: center;
+}
+
+.separator {
+  margin: 0 auto;
+  height: 1px;
+  width: 50px;
+}
+.separator--primary {
+  background-color: var(--primary-color);
+}
+
+.separator--secondary {
+  background-color: var(--secondary-color);
 }
 
 /* 
@@ -72,6 +104,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  overflow: hidden;
 }
 
 .navbar__logo {
@@ -131,13 +164,6 @@ body {
   margin: 26px 0;
 }
 
-.separator {
-  margin: 0 auto;
-  height: 1px;
-  width: 50px;
-  background-color: var(--primary-color);
-}
-
 .hero__content p {
   margin: 26px 0;
   letter-spacing: 1.2px;
@@ -147,12 +173,127 @@ body {
 *SECTION HERO END
  *----------------------------------------------------------------
  */
+/* 
+*SECTION ABOUT START
+ *----------------------------------------------------------------
+ */
+
+.story-container {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.story-container__left {
+  width: 250px;
+  height: 250px;
+}
+
+.story-container__left img {
+  width: 100%;
+  height: auto;
+}
+
+.story-container__right {
+  max-width: 540px;
+}
+.story-container__right h2 {
+  margin-bottom: 28px;
+}
+.story-container__right p {
+  margin-bottom: 30px;
+}
+
+.section-about .video-container {
+  background: var(--overlay-linear-gradient),
+    url("./assets/video-about.png") no-repeat;
+  overflow: hidden;
+  width: 100%;
+  min-height: 550px;
+  /*   min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.video-container__play h6 {
+  margin-top: 30px;
+  color: var(--white-color);
+  text-align: center;
+  font-weight: 900;
+}
+
+/* 
+*SECTION ABOUT END
+ *----------------------------------------------------------------
+ */
+
+/* 
+*SECTION EXPERTISE START 
+ *----------------------------------------------------------------
+ */
+.section-expertise {
+  margin: 70px 0;
+}
+.section-expertise h2 {
+  margin-bottom: 16px;
+}
+.section-expertise p {
+  margin-bottom: 16px;
+}
+
+.grid-border {
+  margin-top: 48px;
+  background-color: #d7d7d7;
+}
+.card-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1px;
+}
+
+.card {
+  background-color: var(--white-color);
+  min-height: 315px;
+  text-align: center;
+  padding: 24px;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 124px;
+  width: 100%;
+}
+
+.card__icon {
+  max-width: 55px;
+  max-height: 55px;
+}
+
+.card__title {
+  font-size: var(--font-size-card-title);
+  color: var(--secondary-color);
+  margin-bottom: 24px;
+}
+
+.card__paragraph {
+  color: var(--secondary-color);
+}
+
+/* 
+*SECTION EXPERTISE END
+ *----------------------------------------------------------------
+ */
 
 /**
  * PAGE FOOTER START
  * -------------------------------------------------------------------
  */
 .page-footer {
+  color: var(--white-color);
   display: flex;
   align-items: center;
   background: var(--overlay-linear-gradient),
@@ -301,6 +442,9 @@ body {
     min-height: 260px;
     flex-direction: column;
   }
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 720px) {
@@ -317,5 +461,12 @@ body {
     min-height: 260px;
     flex-direction: column;
     align-items: center;
+  }
+  .story-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .story-container__right {
+    text-align: center;
   }
 }
