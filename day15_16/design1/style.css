@@ -477,7 +477,7 @@ body {
 
 /**
 /* 
-*SECTION TESTIMONIALS END
+*SECTION TESTIMONIALS START
  *----------------------------------------------------------------
  */
 
@@ -486,12 +486,79 @@ body {
     url("./assets/background-testimonials.png") no-repeat;
   overflow: hidden;
   min-height: 500px;
+  position: relative;
 }
-.container-testimonials {
+
+.container-testimonial {
   max-width: 800px;
   margin: 0 auto;
   color: var(--white-color);
   text-align: center;
+  display: none;
+}
+
+/* Next & previous buttons */
+.navigation-testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+  transition: 0.6s ease;
+  user-select: none;
+  font-weight: 100;
+}
+
+.prev , .next{
+  font-size: 30px;
+  color: var(--white-color);
+}
+
+.prev:hover , .next:hover{
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 16px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+  padding: 1px;
+}
+
+.avatar__center{
+  width: 80px;
+  height: 80px;
+}
+
+.avatar__active, .avatar:hover {
+  padding: 2px;
+  background-color: var(--primary-color);
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .container-testimonials p {
