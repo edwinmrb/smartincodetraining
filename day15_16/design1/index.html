@@ -24,12 +24,12 @@
                 <nav class="navbar__menu">
                     <ul class="navbar__menu-list">
                         <li><a href="/" class="link__active">HOME</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">EXPERTISE</a></li>
-                        <li><a href="#">TEAMS</a></li>
-                        <li><a href="#">WORKS</a></li>
-                        <li><a href="#">PEOPLE SAY</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#expertise">EXPERTISE</a></li>
+                        <li><a href="#team">TEAMS</a></li>
+                        <li><a href="#works">WORKS</a></li>
+                        <li><a href="#testimonials">PEOPLE SAY</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -53,7 +53,7 @@
             </div>
         </header>
         <main>
-            <section class="section-about">
+            <section id="about" class="section-about">
                 <div class="container story-container">
                     <img class="story-container__left img-responsive"
                         src="./assets/logo-story.png" alt="Logo">
@@ -85,7 +85,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-expertise">
+            <section id="expertise" class="section-expertise">
                 <div class="container">
                     <div class="content-center">
                         <h2 class="title">EXPERTISE</h2>
@@ -178,7 +178,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-team">
+            <section id="team" class="section-team">
                 <div class="container">
                     <div class="content-center">
                         <h2 class="title title--white">MEET OUR AMAZING TEAM</h2>
@@ -239,7 +239,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section-works">
+            <section id="works" class="section-works">
                 <div class="container section-works__title">
                     <h2 class="title">OUR WORKS</h2>
                     <a href="http://" class="section-works__title-see-all"> See
@@ -279,7 +279,7 @@
                     <a href="" class="btn">LOAD MORE</a>
                 </div>
             </section>
-            <section class="section-testimonials">
+            <section id="testimonials" class="section-testimonials">
                 <div class="container-testimonial fade">
                     <h5 class="quotation-marks">“</h5>
                     <p class="paragraph paragraph--white">This is Photoshop's
@@ -359,32 +359,36 @@
                 <div class="navigation-testimonials">
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <span class="avatar" onclick="currentSlide(1)">
-                        <img class="img-responsive" 
+                        <img class="img-responsive"
                             src="./assets/testimonials-avatars/avatar1.png"
                             alt="">
                     </span>
                     <span class="avatar" onclick="currentSlide(2)">
-                        <img class="img-responsive" 
+                        <img class="img-responsive"
                             src="./assets/testimonials-avatars/avatar2.png"
                             alt="">
                     </span>
-                    <span class="avatar avatar__center" onclick="currentSlide(3)">
-                        <img class="img-responsive" 
+                    <span class="avatar avatar__center"
+                        onclick="currentSlide(3)">
+                        <img class="img-responsive"
                             src="./assets/testimonials-avatars/avatar3.png"
                             alt="">
                     </span>
                     <div class="avatar" onclick="currentSlide(4)">
-                        <img class="img-responsive"  src="./assets/testimonials-avatars/avatar4.png" alt="">
+                        <img class="img-responsive"
+                            src="./assets/testimonials-avatars/avatar4.png"
+                            alt="">
                     </div>
                     <span class="avatar" onclick="currentSlide(5)">
-                        <img class="img-responsive"  src="./assets/testimonials-avatars/avatar5.png"
+                        <img class="img-responsive"
+                            src="./assets/testimonials-avatars/avatar5.png"
                             alt="">
                     </span>
 
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </section>
-            <section class="section-contact">
+            <section id="contact" class="section-contact">
                 <div class="container section-contact__items">
                     <div class="section-contact__form">
                         <h2 class="title">GIVE US A GOOD NEWS</h2>
@@ -525,7 +529,8 @@
             </div>
         </footer>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="./main.js"></script>
 
     </body>
