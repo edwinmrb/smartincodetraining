@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42.781" height="42.56" viewBox="0 0 42.781 42.56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1e1e1e;
+        stroke: #1e1e1e;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Cross" 
+  class="cls-1" d="M132,1013.45h37.794v0.97H132v-0.97ZM150.567,995h0.975v37.56h-0.975V995Z" 
+  transform="translate(-129.5 -992.5)" />
+</svg>
