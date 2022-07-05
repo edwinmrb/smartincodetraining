@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* background-color:define el color de fondo del elemento
+
+
+
+  
+ 
+background-position:
+ define la posición de la imagen de fondo,primer valorx,segundoy,si no se
+ especifica un segundo valor éste será center
+ aparte de valores numéricos podemos indicar el posicionamiento con las palabras:
+ center,top,bottom,left and right
+background-clip:define cuánto debe extenderse el fondo dentro del elemento.
+background-origin:define el origen de la imagen de fondo,
+background-attachment:
+página
+                      define cómo se comportará la imagen de fondo al desplazarse por la */
+
+body {
+  height: 100vh;
+  /*  background-image:define la imagen de fondo del elemento */
+  background-image: url(./images/img.jpg);
+
+  /*  background-repeat:define cómo se repite la imagen de fondo en el elemento */
+  background-repeat: no-repeat;
+
+  /* background-size:define el tamaño de la imagen de fondo,primer valorx,segundoy */
+  background-size: 100% auto;
+  background-size: 25px 14px;
+
+ /*  cover cambia el tamaño de la imagen de fondo para asegurarse de que permanezca
+  completamente visible */
+  background-size: cover;
+
+  /* contain cambia el tamaño de la imagen de fondo para asegurarse de que el elemento
+  esté completamente cubierto */
+  background-size: ;
+}

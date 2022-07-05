@@ -1,0 +1,69 @@
+// scss-docs-start theme-color-variables
+$primary: #754ffe !default;
+$secondary: #fff !default;
+$dark: #18113c !default;
+$info: #413c5e !default;
+$light: #fff !default;
+
+
+.hero {
+  padding: 48px 0;
+}
+
+.card__hero {
+  padding-right: 20px;
+}
+.pattern {
+  bottom: 0px;
+  right: 0px;
+  z-index: 9;
+  transform: translate(13px, 28px);
+  
+}
+
+
+.card__hero .card-body , .card__hero .card-footer{
+ z-index:10;
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .pattern {
+    transform: translate(43px, 58px);
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .hero {
+    min-height: 100vh;
+    max-height: 100vh; 
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
+
+/* $input-bg:          $info;
+$input-border-width: 0;
+                  
+$input-focus-border-color:              #e8e7ed;
+$input-focus-box-shadow:  0 0 0 3px #e7e1fdbf; */
+/* $success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default; */
+@import "../node_modules/bootstrap/scss/bootstrap";

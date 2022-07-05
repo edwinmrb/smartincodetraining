@@ -1,0 +1,47 @@
+$font-family-sans-serif: "Barlow Semi Condensed", sans-serif;
+$font-size-base: 13px;
+
+$primary: hsl(263, 55%, 52%);
+$secondary: hsl(219, 29%, 14%);
+$light: hsl(0, 0%, 100%);
+$dark: hsl(217, 19%, 35%);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 960px,
+  xxl: 960px,
+) !default;
+
+.d-flex img {
+  width: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .height100 {
+    height: 100vh;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";

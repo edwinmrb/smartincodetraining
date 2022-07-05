@@ -1,0 +1,15 @@
+{
+  "name": "social_page",
+  "version": "1.0.0",
+  "description": "clone using bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"purgecss --css sass/custom.css --content index.html -o sass/reducido.css"
+  },
+  "author": "Edwin Bustamante Rodriguez",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1"
+  }
+}
