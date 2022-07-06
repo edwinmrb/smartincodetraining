@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --height-navbar: 90px;
+}
+
+.navbar {
+  padding: 24px 0;
+}
+.navbar-brand img {
+  height: 30px;
+}
+
+.navbar-avatar {
+  height: 40px;
+}
+
+.fill-warning {
+  fill: #f7c32e !important;
+}
+
+.fill-primary {
+  fill: #066ac9;
+}
+.z-index-n1 {
+  z-index: -1;
+}
+.z-index-9 {
+  z-index: 9;
+}
+.bg-blur {
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.btn-danger-soft {
+  color: #d6293e;
+  background-color: rgba(214, 41, 62, 0.1);
+}
+
+.btn-danger-soft:hover {
+  color: #fff;
+  background-color: #d6293e;
+}
+
+.btn-primary-shadow {
+  color: #fff;
+  background-color: #066ac9;
+  box-shadow: 0 0 0 8px rgb(6 106 201 / 40%);
+  -webkit-box-shadow: 0 0 0 8px rgb(6 106 201 / 40%);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-round {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  padding: 0;
+  text-align: center;
+}
+
+.card-avatar {
+  z-index: 10;
+
+  background: url(./assets/images/card-backgound.png) no-repeat center center,
+    #0cbc87;
+  background-size: cover;
+}
+
+.text-success {
+  color: #0cbc87 !important;
+}
+
+.avatar {
+  list-style: none;
+  margin-right: -12px;
+}
+
+.avatar-img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.icon-lg {
+  width: 3.5rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/* 
+// XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+@media (max-width: 992px) {
+  .navbar .container {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navbar-collapse {
+    padding-bottom: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-shadow: 0px 10px 30px rgb(83 88 93 / 40%);
+    margin-bottom: 50px;
+  }
+  .navbar-avatar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 16px;
+  }
+  .navbar-toggler {
+    margin-right: 60px;
+  }
+
+  .navbar-brand {
+    padding-left: 16px;
+  }
+}
