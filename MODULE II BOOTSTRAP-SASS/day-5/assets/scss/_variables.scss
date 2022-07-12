@@ -1,12 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
-
 $font-family-heebo: "Heebo", sans-serif;
 
+$primary-color: #142850 !default;
 $secondary-color: #00a8cc !default;
+$white-color: #fff !default;
 $black-color: #000000 !default;
 $text-color: #21243d !default;
-$white-color: #fff !default;
 $sky-blue: #edf7fa !default;
-$primary-color: #142850 !default;
-$light-color: #8695A4 !default;
-$gray-color: #E0E0E0 !default;
+$light-color: #8695a4 !default;
+$gray-color: #e0e0e0 !default;
+$background-color: #fff !default;
+
+$dark-theme: false !default;
+
+$font-sizes-btn: (
+  "small": 12px,
+  "normal": 18px,
+  "large": 24px,
+);

@@ -1,0 +1,37 @@
+@mixin paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23.5px;
+}
+
+@mixin section-title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 60px;
+}
+
+@mixin btn {
+  text-decoration: none;
+  border-radius: 2px;
+  font-size: map-get($font-sizes-btn, "normal");
+  line-height: 29px;
+  padding: 16px 18px;
+  display: inline-block;
+}
+
+@mixin btn-color($background-color: $primary-color, $color: $white-color) {
+  background-color: $background-color;
+  color: $color;
+}
+
+@mixin flex($align-items: initial, $justify-content: start) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  
+}
+
+@mixin  user-no-selected {
+  -webkit-user-select: none;
+  user-select: none;
+}

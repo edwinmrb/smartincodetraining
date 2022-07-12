@@ -1,4 +1,13 @@
-@import "variables";
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
+
+@if $dark-theme {
+  $background-color: #0a1428;
+  $primary-color: #034363;
+  $text-color: #92a0ad ;
+  $black-color: rgb(49, 72, 103);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +17,7 @@
 body {
   font-family: $font-family-heebo;
   color: $text-color;
+  background-color: background-color;
 }
 
 a{
