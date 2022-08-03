@@ -1,0 +1,64 @@
+@use "../helpers/variables" as v;
+@use "../helpers/mixins" as mixin;
+
+//===========================================
+// -Navbar start
+//===========================================
+.page-header {
+    background-color: v.$background-color-green;
+    overflow-x: hidden;
+    .navbar {
+        min-height: v.$navbar-height;
+        @include mixin.flex-default();
+        &__brand {
+            white-space: nowrap;
+            @include mixin.text-style(20px, 30px, 700, v.$black-color);
+            span {
+                color: v.$orange-color;
+            }
+        }
+        &__toggle {
+            display: none;
+        }
+        &__menu {
+            @include mixin.flex-default();
+            gap: 50px;
+            @include mixin.media-break(lg) {
+                gap: 16px;
+            }
+            li a {
+                @include mixin.text-style(16px, 24px, 500, v.$black-color);
+            }
+        }
+    }
+}
+
+@include mixin.media-break(md) {
+    .page-header {
+        .navbar {
+            &__toggle {
+                display: inline-block;
+            }
+            &__menu {
+                padding: 8px 16px;
+                min-height: calc(100vh - v.$navbar-height);
+                position: fixed;
+                top: v.$navbar-height;
+                right: 0;
+                flex-direction: column;
+                justify-content: flex-start;
+                background-color: v.$secondary;
+                width: 300px;
+                transform: translateX(300px);  
+                transition: transform .6s ease-in-out;
+                z-index: 1;
+            }
+            .toggled {
+                transform: translateX(0px);    
+            }
+        }
+    }
+}
+//===========================================
+// -Navbar end
+//===========================================

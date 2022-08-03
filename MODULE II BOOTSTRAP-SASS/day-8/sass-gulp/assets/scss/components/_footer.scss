@@ -1,0 +1,102 @@
+@use "../helpers/variables" as v;
+@use "../helpers/mixins" as mixin;
+
+//===========================================
+// -Footer start
+//===========================================
+.page-footer {
+    background-color: v.$primary;
+    padding-top: 76px;
+    padding-bottom: 29px;
+    &__content {
+        @include mixin.flex-default($ai: flex-start);
+        padding-bottom: 69px;
+        &-main {
+            max-width: 338px;
+            h3 {
+                @include mixin.text-style(39.2px, 58.8px, 700, v.$black-color);
+                padding-bottom: 19px;
+            }
+            p {
+                @include mixin.text-style(20px, 27.32px, 400, v.$black-color);
+                padding-bottom: 20px;
+            }
+            ul {
+                @include mixin.flex-default($jc: flex-start);
+                gap: 15.31px;
+                li {
+                    background-color: #1f9b51;
+                    border-radius: 50%;
+                    width: 40.82px;
+                    height: 40.82px;
+                    a {
+                        img {
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &-nav {
+            padding: 0 16px;
+            h4 {
+                @include mixin.text-style(20px, 30px, 600, v.$black-color);
+                padding-bottom: 16px;
+            }
+            ul {
+                li {
+                    @include mixin.text-style(18px, 24.59px, 500, v.$black-color);
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        &-address {
+            max-width: 258px;
+            h4 {
+                @include mixin.text-style(20px, 30px, 600, v.$black-color);
+                padding-bottom: 26px;
+            }
+            p {
+                @include mixin.text-style(20px, 27.32px, 500, v.$black-color);
+            }
+        }
+    }
+
+    &__copyright {
+        @include mixin.text-style(20px, 27.32px, 500, v.$black-color);
+    }
+}
+//===========================================
+// -Footer end
+//===========================================
+
+@include mixin.media-break(md) {
+    .page-footer {
+        &__content {
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@include mixin.media-break(sm) {
+    .page-footer {
+        background-color: v.$primary;
+        padding-top: 76px;
+        padding-bottom: 29px;
+        &__content {
+            @include mixin.flex-default($ai: flex-start);
+            flex-direction: column;
+            flex-wrap: wrap;
+            &-main {
+                max-width: auto;
+            }
+            &-nav {
+                padding: 16px 0;
+            }
+        }
+
+        &__copyright {
+            text-align: center;
+        }
+    }
+}

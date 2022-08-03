@@ -1,0 +1,115 @@
+@use "../helpers/variables" as v;
+@use "../helpers/mixins" as mixin;
+
+.card-solution {
+    max-width: 380px;
+    padding: 50px;
+    padding-left: 30px;
+    &__icon-content {
+        width: 93.33px;
+        height: 93.33px;
+        padding: 30px;
+        border-radius: 20px;
+        background-color: v.$background-color-green;
+        margin-bottom: 15px;
+    }
+    h5 {
+        @include mixin.text-style(24px, 36px, 600, v.$black-color);
+        padding-bottom: 15px;
+    }
+    p {
+        @include mixin.text-style(18px, 24.59px, 400, v.$black-color);
+        padding-bottom: 43px;
+    }
+    a {display: inline;
+        padding: 15px 20px;
+        @include mixin.text-style(18px, 24.59px, 400, v.$black-color);
+
+    }
+}
+
+
+.card-project{
+    max-width: 240px;
+    padding: 40px;
+    text-align: center;
+    img{
+        width: 70px;
+        height: 70px;
+        padding-bottom: 10px;
+    }
+    p{
+        @include mixin.text-style(16px, 24px, 500, v.$black-color);
+        padding-bottom: 15px;
+    }
+    h6{
+        @include mixin.text-style(40px, 60px, 800, v.$primary);
+    }
+
+}
+
+@include mixin.media-break(md) {
+    .card-solution {
+        max-width: 380px;
+        padding: 16px;
+        padding-left: 10px;
+        &__icon-content {
+            width: 50.33px;
+            height: 50.33px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        h5 {
+            @include mixin.text-style(24px, 36px, 600, v.$black-color);
+            padding-bottom: 15px;
+        }
+        p {
+            @include mixin.text-style(16px, 18px, 400, v.$black-color);
+            padding-bottom: 20px;
+        }
+        a {display: inline;
+            padding: 15px 20px;
+            @include mixin.text-style(18px, 24.59px, 400, v.$black-color);
+    
+        }
+    }
+    .card-project{
+        max-width: 200px;
+        padding: 40px;
+        text-align: center;
+        img{
+            width: 40px;
+            height: 40px;
+            padding-bottom: 8px;
+        }
+        p{
+            @include mixin.text-style(14px, 20px, 500, v.$black-color);
+            padding-bottom: 15px;
+        }
+        h6{
+            @include mixin.text-style(25px, 30px, 800, v.$primary);
+        }
+    
+    }  
+}
+
+@include mixin.media-break(sm) {
+    .card-project{
+        max-width: 100px;
+        padding: 8px;
+        text-align: center;
+        img{
+            width: 40px;
+            height: 40px;
+            padding-bottom: 8px;
+        }
+        p{
+            @include mixin.text-style(14px, 20px, 500, v.$black-color);
+            padding-bottom: 15px;
+        }
+        h6{
+            @include mixin.text-style(25px, 30px, 800, v.$primary);
+        }
+    
+    }  
+}

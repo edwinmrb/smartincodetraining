@@ -1,0 +1,42 @@
+//===========================================
+// -Variables start
+//===========================================
+
+// Colors start
+
+// define your vars or override bootstrap vars
+$default: #ffffff;
+$primary: #20B15A;
+$secondary: #2757c8;
+$black-color: #000000;
+$orange-color: #F55F1D;
+$white-color: #ffffff;
+$background-color-green: #d7f5dc;
+
+//SIZES
+$navbar-height: 90px;
+
+// Typography Family
+$font-default: "Poppins", sans-serif;
+$font-montserrat: "Montserrat", sans-serif;
+
+$font-path: "../fonts";
+
+//MAP breakpoint
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+
+// ===========================================
+// -Variables end
+// ===========================================
+
+
+
+

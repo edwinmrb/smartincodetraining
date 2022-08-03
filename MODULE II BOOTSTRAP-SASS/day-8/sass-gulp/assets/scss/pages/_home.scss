@@ -1,0 +1,144 @@
+@use "../helpers/variables" as v;
+@use "../helpers/mixins" as mixin;
+
+/* ============= Hero Section Start =============== */
+.hero {
+    background-color: v.$background-color-green;
+    padding-bottom: 34px;
+    &__main-content {
+        @include mixin.flex-default();
+        height: 646px;
+    }
+    &__welcome-content {
+        max-width: 550px;
+        h1 {
+            @include mixin.text-style(50px, 65px, 700, v.$black-color);
+            padding-bottom: 10px;
+        }
+        p {
+            @include mixin.text-style(20px, 27.32px, 500, v.$black-color);
+            padding-bottom: 37px;
+        }
+        .btn {
+            margin-bottom: 16px;
+        }
+    }
+    &__main-image {
+        position: relative;
+        align-self: flex-end;
+        flex-shrink: 0;
+        max-width: 684px;
+        @include mixin.media-break(xl) {
+            max-width: 484px;
+        }
+        @include mixin.media-break(lg) {
+            max-width: 420px;
+        }
+        @include mixin.media-break(md) {
+            max-width: 300px;
+        }
+        img {
+            margin-bottom: -7px;
+        }
+    }
+    &__footer {
+        @include mixin.flex-default();
+        background-color: v.$white-color;
+        min-height: 137px;
+        img {
+            max-width: 162.7px;
+        }
+    }
+}
+/* ============= Hero Section End =============== */
+
+/* ============= What we do Section Start ============== */
+.what-we-do {
+    padding-top: 67px;
+    
+    &__solutions {
+        padding-bottom: 48px;
+        @include mixin.flex-default($ai:flex-start);   
+    }
+    &__projects{
+        padding: 80px 0;
+        @include mixin.flex-default($ai:flex-start,$jc:center);
+    }
+}
+/* ============= What we do Section End ============== */
+
+/* =============== MEDIA QUERY =============== */
+
+@include mixin.media-break(xl) {
+    .hero {
+        &__main-content {
+            height: 462px;
+        }
+        &__welcome-content {
+            @include mixin.text-style(40px, 50px, 700, v.$black-color);
+        }
+        &__footer img {
+            max-width: 162.7px;
+        }
+    }
+}
+
+@include mixin.media-break(lg) {
+    .hero {
+        &__main-content {
+            height: 372px;
+        }
+        &__welcome-content h1 {
+            @include mixin.text-style(30px, 35px, 700, v.$black-color);
+        }
+        &__footer img {
+            max-width: 100px;
+        }
+    }
+}
+@include mixin.media-break(md) {
+    .hero {
+        &__main-content {
+            height: 372px;
+        }
+        &__welcome-content {
+            h1 {
+                @include mixin.text-style(20px, 25px, 700, v.$black-color);
+            }
+            p {
+                @include mixin.text-style(16px, 18.32px, 500, v.$black-color);
+                padding-bottom: 37px;
+            }
+        }
+
+        &__footer {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            img {
+                max-width: 65px;
+            }
+        }
+    }
+    .what-we-do {
+        &__solutions {
+            flex-wrap: wrap;  
+        }
+        &__projects{
+            flex-wrap: wrap; 
+        }
+    }
+}
+
+@include mixin.media-break(sm) {
+    .hero {
+        &__main-content {
+            flex-direction: column-reverse;
+            height: auto;
+        }
+
+        &__footer img {
+            max-width: 100px;
+        }
+    }
+}
